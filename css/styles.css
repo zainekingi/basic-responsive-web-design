@@ -1,0 +1,215 @@
+/** Base Styles **/
+ul, ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #666;
+    display: block;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #666;
+}
+.wrapper {
+    width: 100%;
+    margin: 0px auto;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.portfolio {
+    background-color: #fff;
+}
+.skills {
+    width: 100%;
+    border-bottom: 1px solid #e7e7e7;
+}
+.skills-list {
+    padding-top: 25px;
+}
+footer {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.footer {
+    border-top: 1px solid #e7e7e7;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-nav {
+    display: none;
+}
+.mainNav {
+    width: 90%;
+    margin: 0 auto 35px;
+}
+.mainNav li {
+    margin: 10px auto;
+    padding: 15px 0;
+    background-color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.intro-wrapper {
+    margin: 0 auto 35px;
+    display: flex;
+    flex-direction: column;
+}
+.profile-pic, .work {
+    height: auto;
+    width: 70%;
+    margin: 0 auto 25px;
+}
+.work, .contact {
+    width: 100%;
+    margin-top: 35px;
+}
+
+/** Base Typography **/
+strong {
+    font-weight: bold;
+    padding-left: 15px;
+}
+p {
+    color: #947f87;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    font-weight: lighter;
+}
+.portfolio p {
+    color: #333;
+}
+footer p, footer p a {
+    color: #333;
+}
+h1 {
+
+}
+h2 {
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: lighter;
+}
+h3 {
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    color: #333;
+    font-weight: lighter;
+}
+
+/** 768px Tablet media queries **/
+@media all and (min-width:768px) {
+    .wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .mainNav {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .mainNav li {
+        background-color: #fafafa;
+    }
+    .intro-wrapper {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .profile-pic {
+        width: 500px;
+        height: 200px;
+    }
+    .work-item {
+        width: 49%;
+    }
+    .skills {
+        width: 70%;
+    }
+    .skills-list {
+        width: 50%;
+    }
+    .contact {
+        flex-direction: column;
+        width: 70%;
+        margin: 35px auto;
+    }
+    footer {
+        padding: 0 25px;
+        height: 150px;
+    }
+    footer .back-to-top {
+        display: none;
+    }
+    .footer-nav {
+        display: flex;
+        font-size: .9rem;
+        line-height: 3rem;
+        justify-content: space-between;
+        width: 35%;
+        text-transform: uppercase;
+    }
+    /** Typography **/
+    strong {
+        line-height: 2rem;
+    }
+    .name {
+        text-align: center;
+        flex-grow: 2;
+    }
+    .intro-wrapper p {
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        text-align: left;
+        padding: 0 25px 0 0;
+        margin: 0;
+    }
+    h2 {
+        text-align: center;
+        flex-basis: 100%;
+    }
+}
+
+/** 1024px Desktop media queries **/
+@media all and (min-width: 1024px) {
+    .wrapper {
+        width: 90%;
+    }
+    .mainNav {
+        width: 30%;
+    }
+    .mainNav li {
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+    .work-item {
+        width: 31%;
+    }
+    .contact, .skills {
+        width: 65%;
+    }
+    .contact p {
+        font-size: 1.2rem;
+        line-height: 2.4rem;
+    }
+
+    /** Typography **/
+    .name {
+        text-align: left;
+    }
+}
