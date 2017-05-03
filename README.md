@@ -1,3 +1,3 @@
-# project-2
+# Basic Responsive Web Design
 
-Zaine Kingi's Project-2 Responsive Layout Treehouse assessment 2 project files.
+Basic HTML and CSS website - responsive web design.
